@@ -1,1 +1,1 @@
-aert("working");
+alert("working");
