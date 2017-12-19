@@ -1,1 +1,1 @@
-aert("working");
+$("#submit").onclick(alert("working"));
