@@ -1,150 +1,58 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#e94c23;
+    margin-top: 2%;
+   
+}
+#box {
     
-<meta charset="UTF-8">   
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<title>Truco Form 2</title>
-
-    <link rel="stylesheet" href="truco.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-
-
-</head>
-<body>
+    background-color: white;
+    padding: 5%;
+    max-width: 750px;
+    width: 75%;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 10px 10px 50px 0px;
+    margin: 3% auto 0 auto;
+}
+#legaljargon {
     
+    color: white;
+    max-width: 750px;
+    width: 75%;
+    height: auto;
+    margin: 0 auto 10px auto;
+    padding-bottom: 10%;
+    padding-top: 1%;
     
-
-    <div id="box">
-      <img src="https://ontheborderproducts.com/wp-content/uploads/2015/07/TRUCObig1.gif">
-      
-       <h1>Consumer RMA Form</h1>
-        <form>
-           
-            <div class="label">
-                <label for="numberIdentifier">Number/Identifier</label><br>
-                <input type="text" value="" name="numberIdentifier">
-            </div>
-            <div class="label">
-                <label for="dateReceived">Date Received</label><br>
-                <input type="date" value="" name="dateReceived">
-            </div>
-            <br>
-            <div id="wholename">
-            <div class="label name">
-                <label  for="firstName">Store Name</label><br>
-                <input class="nameinput" type="text" value="" name="firstName">
-            </div>
-            <div class="label name">
-                <label for="lastName">Store Number</label><br>
-                <input class="nameinput" type="number" value="" name="number">
-            </div>
-            </div>
-            <br>
-            <div class="label">
-                <label for="city">City</label><br>
-                <input type="text" value="" name="city">
-            </div>
-            <div class="label">
-                <label for="state">State</label><br>
-                <input type="text" value="" name="state">
-            </div>
-            <div class="label">
-                <label for="phone">Phone</label><br>
-                <input type="text" value="" name="phone">
-            </div>
-            <br>
-            <div class="label">
-                <label for="phone">Contact Name</label><br>
-                <input type="text" value="" name="phone">
-            </div>
-            <br>
-            <div class="label">
-                <label for="phone">Last 4 of Claim</label><br>
-                <input type="text" value="" name="phone">
-            </div>
-            <br>
-            <div class="dropdown">
-                <label for="productName">Product</label><br>
-                <select name="productName">
-                    <option value="Cafe">Cafe</option>
-                    <option value="Cant Med">Cant Med</option>
-                    <option value="Cant Mild">Cant Mild</option>
-                    <option value="Chky Med">Chky Med</option>
-                    <option value="Chky Med Cup">Chky Med Cup</option>
-                    <option value="Fdc Cf">Fdc Cf</option>
-                    <option value="Fiesta Dippin Chips">Fiesta Dippin Chips</option>
-                    <option value="Holiday">Holiday</option>
-                    <option value="Nacho">Nacho</option>    
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">Size</label><br>   
-                <select name="Size">
-                    <option value="">2.0 oz</option>
-                    <option value="">3.125 oz</option>
-                    <option value="">8 oz</option>
-                    <option value="">8.25 oz</option>
-                    <option value="">12 oz</option>
-                    <option value="">12.5 oz</option>
-                    <option value="">13 oz</option>
-                    <option value="">16 oz</option>
-                    <option value="">18 oz</option>
-                    <option value="">20 oz</option>
-                    <option value="">24 oz</option>
-                    <option value="">28 oz</option>
-                    
-                </select>
-            </div>
-            
-            <div class="label">
-                <label >Print Batch Code</label><br>
-                <input type="text" value="" name="printBatchCode">
-            </div>
-            <div class="label">
-                <label>Expiration date</label><br>
-                <input type="date" value="" name="expirationDate">
-            </div>
-            <div class="label">
-                <label>Location</label><br>
-                <input type="text" value="" name="location"> 
-            </div>
-            
-            <div class="label">
-                <label>Military Time</label><br>
-                <input type="time" value="" name="militaryTime">
-            </div>
-            <div class="label">
-                <label for="">Calculated Batch code</label><br>
-                <input type="text" value="" name="calculatedBatchCode">
-            </div>
-            <div class="label">
-                <label>Reason</label><br>
-                <input type="text" value="" name="reason">
-            </div>
-            <div class="label">
-                <label for="">Quantity</label><br>
-                <input type="text" value="" name="consumerComments">
-            </div>
-            <div class="label">
-                <label for="">Status</label><br>
-                <input type="text" value="" name="storeName">
-            </div>
-            
-        
-        
+}
+form {
+    margin: auto;
+}
+.label {
+    margin: 10px;
+    display: inline-block;
+}
+.dropdown {
+    display: inline-block;
+    margin: 10px;
     
-        <div>
-            <input type="submit" id="submit">
-        </div>
-    </form>
-    
-    </div>
-    
-   <p id="legaljargon">© 2015 Truco Enterprises LP ALL RIGHTS RESERVED. Privacy Policy</p>
+}
+.name {
+    width: 45%;
+    display:inline-block;
+}
+.nameinput{
+    width:100%;
+}
+ /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
