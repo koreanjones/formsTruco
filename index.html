@@ -5,10 +5,10 @@
 <head>
     
 <meta charset="UTF-8">   
-
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <title>Truco Form 1</title>
 
-    <script src="truco.js"></script>
     <link rel="stylesheet" href="truco.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     <script
@@ -27,38 +27,40 @@
         <form>
            
             <div class="label">
-                <label >Number/Identifier</label><br>
-                <input type="text" value="" name="identifier">
+                <label for="numberIdentifier">Number/Identifier</label><br>
+                <input type="text" value="" name="numberIdentifier">
             </div>
             <div class="label">
-                <label>Date Received</label><br>
-                <input type="date" value="" name="date-received">
+                <label for="dateReceived">Date Received</label><br>
+                <input type="date" value="" name="dateReceived">
             </div>
             <br>
+            <div id="wholename">
             <div class="label name">
-                <label>First Name</label><br>
-                <input type="text" value="" name="first-name">
+                <label  for="firstName">First Name</label><br>
+                <input class="nameinput" type="text" value="" name="firstName">
             </div>
             <div class="label name">
-                <label>Last Name</label><br>
-                <input type="text" value="" name="lst-name">
+                <label for="lastName">Last Name</label><br>
+                <input class="nameinput" type="text" value="" name="lastName">
+            </div>
             </div>
             <br>
             <div class="label">
-                <label>Address</label><br>
+                <label for="address">Address</label><br>
                 <input type="text" value="" name="address"> 
             </div>
             <br>
             <div class="label">
-                <label>City</label><br>
+                <label for="city">City</label><br>
                 <input type="text" value="" name="city">
             </div>
             <div class="label">
-                <label for="">State</label><br>
+                <label for="state">State</label><br>
                 <input type="text" value="" name="state">
             </div>
             <div class="label">
-                <label>Zip</label><br>
+                <label for="zip">Zip</label><br>
                 <input type="text" value="" name="zip">
             </div>
             <br>
@@ -67,7 +69,7 @@
                 <input type="email" value="" name="email">
             </div>
             <div class="label">
-                <label for="">Phone</label><br>
+                <label for="phone">Phone</label><br>
                 <input type="text" value="" name="phone">
             </div>
             <br>
@@ -80,8 +82,8 @@
                 </select>
             </div>
             <div class="dropdown">
-                <label for="">Product Name</label><br>
-                <select name="ProductName">
+                <label for="productName">Product Name</label><br>
+                <select name="productName">
                     <option value="Cafe">Cafe</option>
                     <option value="Cant Med">Cant Med</option>
                     <option value="Cant Mild">Cant Mild</option>
@@ -94,62 +96,146 @@
                 </select>
             </div>
             <div class="dropdown">
-                <label for="">Size</label><br>   
+                <label for="">Cafe Size</label><br>   
                 <select name="Size">
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="">2.0 oz</option>
+                    <option value="">3.125 oz</option>
+                    <option value="">8 oz</option>
+                    <option value="">8.25 oz</option>
+                    <option value="">12 oz</option>
+                    <option value="">12.5 oz</option>
+                    <option value="">13 oz</option>
+                    <option value="">16 oz</option>
+                    <option value="">18 oz</option>
+                    <option value="">20 oz</option>
+                    <option value="">24 oz</option>
+                    <option value="">28 oz</option>
+                    
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">CANT MED Size</label><br>   
+                <select name="Size">
+                    <option value="">16 oz</option>
+                    <option value="">20 oz</option>
+                    <option value="">24 oz</option>
+                    <option value="">47 oz</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">CANT Mild Size</label><br>   
+                <select name="Size">
+                    <option value="">16 oz</option>
+                    <option value="">20 oz</option>
+                    <option value="">24 oz</option>
+                    <option value="">47 oz</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">CHKY MED Size</label><br>   
+                <select name="Size">
+                    <option value="">16 oz</option>
+                    <option value="">19 oz</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">CHKY MED Size</label><br>   
+                <select name="Size">
+                    <option value="">4 oz</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">CHKY MILD Size</label><br>   
+                <select name="Size">
+                    <option value="">16 oz</option>
+                   
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">FDC CF</label><br>   
+                <select name="Size">
+                    <option value="">9 oz</option>
+                    <option value="">13 oz</option>
+                 
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="">FIESTA DIPPIN CHIPS</label><br>   
+                <select name="Size">
+                    <option value="">9 oz</option>
+                    <option value="">13 oz</option>
                 </select>
             </div>
             <div class="label">
                 <label >Print Batch Code</label><br>
-                <input type="text">
+                <input type="text" value="" name="printBatchCode">
             </div>
             <div class="label">
                 <label>Expiration date</label><br>
-                <input type="date">
+                <input type="date" value="" name="expirationDate">
             </div>
             <div class="label">
                 <label>Location</label><br>
-                <input type="text">
+                <input type="text" value="" name="location"> 
             </div>
             <div class="label">
                 <label>Shift</label><br>
-                <input type="text">
+                <input type="text" value="" name="shift">
             </div>
             <div class="label">
                 <label>Bagger</label><br>
-                <input type="text">
+                <input type="text" value="" name="bagger">
             </div>
             <div class="label">
                 <label>Military Time</label><br>
-                <input type="time">
+                <input type="time" value="" name="militaryTime">
             </div>
             <div class="label">
                 <label for="">Calculated Batch code</label><br>
-                <input type="text">
+                <input type="text" value="" name="calculatedBatchCode">
             </div>
             <div class="label">
                 <label>Reason</label><br>
-                <input type="text">
+                <input type="text" value="" name="reason">
             </div>
             <div class="label">
                 <label for="">Consumer Comments</label><br>
-                <input type="text">
+                <input type="text" value="" name="consumerComments">
             </div>
             <div class="label">
                 <label for="">Store Name</label><br>
-                <input type="text">
+                <input type="text" value="" name="storeName">
             </div>
-            <div>
+            
+        
+        <div>
+         <label for="raddressInput">Search location:</label>
+         <input type="text" id="addressInput" size="15"/>
+        <label for="radiusSelect">Radius:</label>
+        <select id="radiusSelect" label="Radius">
+          <option value="50" selected>50 miles</option>
+          <option value="30">30 miles</option>
+          <option value="20">20 miles</option>
+          <option value="10">10 miles</option>
+        </select>
+
+        <input type="button" id="searchButton" value="Search"/>
+    </div>
+    <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
+    <div id="map" style="width: 100%; height: 90%"></div>
+    
+    <div>
                 <input type="submit" id="submit">
             </div>
         </form>
+  
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpdKZ1zvPfwULIJnVwk4NEM8PPZDpSHTY&callback=initMap">
+    </script>
     </div>
     
     
 </body>
 
 
-</html> 
+</html>
