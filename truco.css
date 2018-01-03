@@ -2,11 +2,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin-top: 5%;
     background-color:darkslategrey;
-    max-width: 900px;
 }
 #box {
     background-color: white;
     padding: 5%;
+    max-width: 750px;
     width: 75%;
     height: auto;
     border: 1px solid black;
@@ -26,5 +26,20 @@ form {
     
 }
 .name {
-    width: 30%;
+    width: 45%;
+    display:inline-block;
 }
+.nameinput{
+    width:100%;
+}
+ /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
