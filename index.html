@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -49,9 +50,9 @@
             </div>
             </div>
             <br>
-            <div class="label">
+            <div class="label" id="address">
                 <label for="address">Address</label><br>
-                <input type="text" value="" name="address"> 
+                <input type="text" value="" name="address" id="address"> 
             </div>
             <br>
             <div class="label">
@@ -74,6 +75,11 @@
             <div class="label">
                 <label for="phone">Phone</label><br>
                 <input type="text" value="" name="phone">
+            </div>
+            
+            <div class="label">
+                <label >Source</label><br>
+                <input type="text" value="" name="source">
             </div>
             <br>
             <div class="dropdown">
@@ -106,7 +112,7 @@
                     <option value="ORIG MED">ORIG MED</option> 
                     <option value="ORIG MILD">ORIG MILD</option>
                     <option value="RANCH">RANCH</option>
-                    <option value="Rounds">ROUNDS</option>
+                    <option value="ROUNDS">ROUNDS</option>
                     <option value="SALSA VERDE">SALSA VERDE</option>
                     <option value="STRIPS">STRIPS</option>
                     <option value="THINS">THINS</option>
@@ -128,13 +134,40 @@
                 <label>Expiration date</label><br>
                 <input type="date" value="" name="expirationDate">
             </div>
-            <div class="label">
+            <div class="dropdown">
                 <label>Location</label><br>
-                <input type="text" value="" name="location"> 
+                <select name="Size">
+                    <option value="">AMX</option>
+                    <option value="">BAP</option>
+                    <option value="">COP</option>
+                    <option value="">CYC</option>
+                    <option value="">FES</option>
+                    <option value="">LAF</option>
+                    <option value="">KNG</option>
+                    <option value="">MFF</option>
+                    <option value="">MXO</option>
+                    <option value="">RIC</option>
+                    <option value="">RUD</option>
+                    <option value="">SHA</option>
+                    <option value="">SHH</option>
+                    <option value="">SHM</option>
+                    <option value="">WAR</option>
+                    <option value="">BRN</option>
+                    <option value="">FSS</option>
+                    <option value="">NAT</option>
+                    <option value="">PCB</option>
+                    <option value="">SAF</option>
+                    <option value="">WFI</option>
+                    
+                </select>
             </div>
             <div class="label">
                 <label>Shift</label><br>
                 <input type="text" value="" name="shift">
+            </div>
+            <div class="label">
+                <label>Line</label><br>
+                <input type="text" value="" name="line">
             </div>
             <div class="label">
                 <label>Bagger</label><br>
@@ -144,15 +177,11 @@
                 <label>Military Time</label><br>
                 <input type="time" value="" name="militaryTime">
             </div>
-            <div class="label">
-                <label for="">Calculated Batch code</label><br>
-                <input type="text" value="" name="calculatedBatchCode">
-            </div>
             <div class="dropdown">
                 <label>Reasons</label><br>
                 <select name="Size">
                     <option value="">Allergens</option>
-                    <option value="">Appearance: Dark COlor</option>
+                    <option value="">Appearance: Dark Color</option>
                     <option value="">Apearance: shape</option>
                     <option value="">Bad Seal</option>
                     <option value="">Breakage</option>
@@ -160,25 +189,25 @@
                     <option value="">Burnt Flavors</option>
                     <option value="">Code Date Expired</option>
                     <option value="">Coupons</option>
-                    <option value="">Damaged: Package</option>
-                    <option value="">Dislike = General</option>
-                    <option value="">Dislike = Taste</option>
-                    <option value="">Dislike texture</option>
-                    <option value="">flavor: other</option>
-                    <option value="">flavor: sour</option>
-                    <option value="">Foreign Object: Hair</option>
-                    <option value="">Foreign Object: Insect</option>
-                    <option value="">Foreign Object: Masa Clump</option>
-                    <option value="">Foreign Object: Oil Polymerized</option>
-                    <option value="">Foreign Object: Other</option>
-                    <option value="">Foreign Object: Paper</option>
-                    <option value="">Foreign Object: Plastic</option>
-                    <option value="">Foreign Object: Seasoning Clump</option>
-                    <option value="">Foreign Object: Unkown</option>
+                    <option value="">Damaged : Package</option>
+                    <option value="">Dislike : General</option>
+                    <option value="">Dislike : Taste</option>
+                    <option value="">Dislike Texture</option>
+                    <option value="">flavor : Other</option>
+                    <option value="">flavor : Sour</option>
+                    <option value="">Foreign Object : Hair</option>
+                    <option value="">Foreign Object : Insect</option>
+                    <option value="">Foreign Object : Masa Clump</option>
+                    <option value="">Foreign Object : Oil Polymerized</option>
+                    <option value="">Foreign Object : Other</option>
+                    <option value="">Foreign Object : Paper</option>
+                    <option value="">Foreign Object : Plastic</option>
+                    <option value="">Foreign Object : Seasoning Clump</option>
+                    <option value="">Foreign Object : Unkown</option>
                     <option value="">General</option>
                     <option value="">GMO Ingredients</option>
-                    <option value="">Heat Level: Hot</option>
-                    <option value="">Illedgible Code Date</option>
+                    <option value="">Heat Level : Hot</option>
+                    <option value="">Illegible Code Date</option>
                     <option value="">Illness</option>
                     <option value="">Ingredients</option>
                     <option value="">Lid Too Tight</option>
@@ -190,18 +219,18 @@
                     <option value="">Praise</option>
                     <option value="">Rancid</option>
                     <option value="">Salt Increase</option>
-                    <option value="">Severe Foreign Object: Glass</option>
-                    <option value="">Severe Foreign Object: Hard Plastic</option>
-                    <option value="">Severe Foreign Object: Metal</option>
-                    <option value="">Severe Foreign Object: Other</option>
+                    <option value="">Severe Foreign Object : Glass</option>
+                    <option value="">Severe Foreign Object : Hard Plastic</option>
+                    <option value="">Severe Foreign Object : Metal</option>
+                    <option value="">Severe Foreign Object : Other</option>
                     <option value="">Smell</option>
                     <option value="">Spoilage</option>
                     <option value="">Stale</option>
-                    <option value="">Texture: Brittle</option>
-                    <option value="">Texture: Hard</option>
-                    <option value="">Texture: Other</option>
-                    <option value="">Texture: Thick</option>
-                    <option value="">Texture: Too Watery</option>
+                    <option value="">Texture : Brittle</option>
+                    <option value="">Texture : Hard</option>
+                    <option value="">Texture : Other</option>
+                    <option value="">Texture : Thick</option>
+                    <option value="">Texture : Too Watery</option>
                     <option value="">Too Bland</option>
                     <option value="">Too Salty</option>
                     <option value="">Underfilled</option>
@@ -217,8 +246,12 @@
                 <input type="text" value="" name="storeName">
             </div>
             <div class="label">
-                <label >Source</label><br>
-                <input type="text" value="" name="source">
+                <label for="city">City</label><br>
+                <input type="text" value="" name="city">
+            </div>
+            <div class="label">
+                <label for="state">State</label><br>
+                <input type="text" value="" name="state">
             </div>
         
         <div>
