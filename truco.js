@@ -1,5 +1,3 @@
-alert("working");
-// create function to populate
 
 function populate(s1,s2){
 	var s1 = document.getElementById(s1);
@@ -14,11 +12,11 @@ function populate(s1,s2){
 	} else if(s1.value == "CHKY MED"){
 		var optionArray = ["|","16|16 oz","19.0|19.0 oz"];
 	} else if(s1.value == "CHKY MED CUP"){
-		var optionArray = ["|","16|16 oz","20|20 oz","24|24 oz","47|47 oz"];
+		var optionArray = ["|","4|4 oz"];
 	} else if(s1.value == "CHKY MILD"){
 		var optionArray = ["|","4|4 oz"];
 	} else if(s1.value == "FDC CF"){
-		var optionArray = ["|","16|16 oz"];
+		var optionArray = ["|","9|9 oz","13|13 oz"];
 	} else if(s1.value == "FIESTA DIPPIN CHIPS"){
 		var optionArray = ["|","9|9 oz","13|13 oz"];
 	} else if(s1.value == "HOLIDAY"){
@@ -46,7 +44,7 @@ function populate(s1,s2){
 	} else if(s1.value == "ROUNDS"){
 		var optionArray = ["|","8.25|8.25 oz","11.5|11.5 oz","12.5|12.5 oz","13|13 oz","16|16 oz"];
 	} else if(s1.value == "SALSA VERDE"){
-		var optionArray = ["|","15|15 oz"];
+		var optionArray = ["|","15.5|15.5 oz"];
 	} else if(s1.value == "STRIPS"){
 		var optionArray = ["|","12|12 oz","16|16 oz"];
 	} else if(s1.value == "THINS"){
@@ -54,7 +52,7 @@ function populate(s1,s2){
 	} else if(s1.value == "WHT QUESO"){
 		var optionArray = ["|","15.5|15.5 oz","17.5|17.5 oz"];
 	} else if(s1.value == "YLW QUESO"){
-		var optionArray = ["|","20|20 oz","23|23 oz"];
+		var optionArray = ["|","15.5|15.5 oz","17.5|17.5 oz"];
 	} else if(s1.value == "YLW QUESO CUP"){
 		var optionArray = ["|","3.625|3.625 oz"];
 	}
