@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -15,7 +14,7 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-
+    <script src="truco.js"></script>
 
 </head>
 <body>
@@ -86,104 +85,39 @@
                 </select>
             </div>
             <div class="dropdown">
-                <label for="productName">Product Name</label><br>
-                <select name="productName">
-                    <option value="Cafe">Cafe</option>
-                    <option value="Cant Med">Cant Med</option>
-                    <option value="Cant Mild">Cant Mild</option>
-                    <option value="Chky Med">Chky Med</option>
-                    <option value="Chky Med Cup">Chky Med Cup</option>
-                    <option value="Fdc Cf">Fdc Cf</option>
-                    <option value="Fiesta Dippin Chips">Fiesta Dippin Chips</option>
-                    <option value="Holiday">Holiday</option>
-                    <option value="Nacho">Nacho</option>
-                    <option value="O.Chky Med">O.Chky Med</option>    
-                    <option value="O.Chky Mild">O.Chky Mild</option> 
-                    <option value="Org Blue">Org Blue</option> 
-                    <option value="Org Purp Strip">Org Purp Strip</option> 
-                    <option value="Org Yellow">Org Yellow</option>
-                    <option value="Orig Hot">Orig Hot</option>
-                    <option value="Orig Med">Orig Med</option> 
-                    <option value="Orig Mild">Orig Mild</option>
-                    <option value="Ranch">Ranch</option>
-                    <option value="Rounds">Rounds</option>
-                    <option value="Salsa Verde">Salsa Verde</option>
-                    <option value="Strips">Strips</option>
-                    <option value="Thins">Thins</option>
-                    <option value="Wht Queso">Wht Queso</option>
-                    <option value="Ylw Queso">Ylw Queso</option>
-                    <option value="Ylw Queso Cup">Ylw Queso Cup</option>     
+                <label for="product">Product Name</label><br>
+                <select id="product" name="product" onchange="populate(this.id,'size')">
+                    <option value=""></option>
+                    <option value="CAFE">CAFE</option>
+                    <option value="CANT MED">CANT MED</option>
+                    <option value="CANT MILD">CANT MILD</option>
+                    <option value="CHKY MED">CHKY MED</option>
+                    <option value="CHKY MED CUP">CHKY MED CUP</option>
+                    <option value="FDC CF">FDC CF</option>
+                    <option value="FIESTA DIPPIN CHIPS">FIESTA DIPPIN CHIPS</option>
+                    <option value="HOLIDAY">HOLIDAY</option>
+                    <option value="NACHO">NACHO</option>
+                    <option value="O.CHKY MED">O.CHKY MED</option>    
+                    <option value="O.CHKY MILD">O.CHKY MILD</option> 
+                    <option value="ORG BLUE">ORG BLUE</option> 
+                    <option value="ORG PURP STRIP">ORG PURP STRIP</option> 
+                    <option value="ORG YELLOW">ORG YELLOW</option>
+                    <option value="ORIG HOT">ORIG HOT</option>
+                    <option value="ORIG MED">ORIG MED</option> 
+                    <option value="ORIG MILD">ORIG MILD</option>
+                    <option value="RANCH">RANCH</option>
+                    <option value="Rounds">ROUNDS</option>
+                    <option value="SALSA VERDE">SALSA VERDE</option>
+                    <option value="STRIPS">STRIPS</option>
+                    <option value="THINS">THINS</option>
+                    <option value="WHT QUESO">WHT QUESO</option>
+                    <option value="YLW QUESO">YLW QUESO</option>
+                    <option value="YLW QUESO CUP">YLW QUESO CUP</option>     
                 </select>
             </div>
             <div class="dropdown">
-                <label for="">Cafe Size</label><br>   
-                <select name="Size">
-                    <option value="">2.0 oz</option>
-                    <option value="">3.125 oz</option>
-                    <option value="">8 oz</option>
-                    <option value="">8.25 oz</option>
-                    <option value="">12 oz</option>
-                    <option value="">12.5 oz</option>
-                    <option value="">13 oz</option>
-                    <option value="">16 oz</option>
-                    <option value="">18 oz</option>
-                    <option value="">20 oz</option>
-                    <option value="">24 oz</option>
-                    <option value="">28 oz</option>
-                    
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">CANT MED Size</label><br>   
-                <select name="Size">
-                    <option value="">16 oz</option>
-                    <option value="">20 oz</option>
-                    <option value="">24 oz</option>
-                    <option value="">47 oz</option>
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">CANT Mild Size</label><br>   
-                <select name="Size">
-                    <option value="">16 oz</option>
-                    <option value="">20 oz</option>
-                    <option value="">24 oz</option>
-                    <option value="">47 oz</option>
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">CHKY MED Size</label><br>   
-                <select name="Size">
-                    <option value="">16 oz</option>
-                    <option value="">19 oz</option>
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">CHKY MED Size</label><br>   
-                <select name="Size">
-                    <option value="">4 oz</option>
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">CHKY MILD Size</label><br>   
-                <select name="Size">
-                    <option value="">16 oz</option>
-                   
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">FDC CF</label><br>   
-                <select name="Size">
-                    <option value="">9 oz</option>
-                    <option value="">13 oz</option>
-                 
-                </select>
-            </div>
-            <div class="dropdown">
-                <label for="">FIESTA DIPPIN CHIPS</label><br>   
-                <select name="Size">
-                    <option value="">9 oz</option>
-                    <option value="">13 oz</option>
+                <label for="size">Size</label><br>   
+                <select id="size" name="size">
                 </select>
             </div>
             <div class="label">
@@ -282,7 +216,10 @@
                 <label for="">Store Name</label><br>
                 <input type="text" value="" name="storeName">
             </div>
-            
+            <div class="label">
+                <label >Source</label><br>
+                <input type="text" value="" name="source">
+            </div>
         
         <div>
           <label for="raddressInput">Search location:</label>
@@ -294,6 +231,7 @@
               <option value="20">20 miles</option>
               <option value="10">10 miles</option>
             </select>
+            
 
           <input type="button" id="searchButton" value="Search"/>
         </div>
