@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -28,11 +27,11 @@
      </div>
       <div id="innerbox">
        <h1>Consumer Feedback Form</h1>
-        <form>
+        <form method="post">
            
             <div class="label">
                 <label for="numberIdentifier">Number/Identifier</label><br>
-                <input type="text" value="" name="numberIdentifier">
+                <input type="text" value="" name="numberIdentifier" placeholder="DO NOT USE!!">
             </div>
             <div class="label">
                 <label for="dateReceived">Date Received</label><br>
@@ -77,14 +76,24 @@
                 <input type="text" value="" name="phone">
             </div>
             
-            <div class="label">
-                <label >Source</label><br>
-                <input type="text" value="" name="source">
+            <div class="dropdown">
+                <label for="source">Source</label><br>
+                <select name="Source" id="">
+                    <option value=""></option>
+                    <option value="Phone Call">Phone Call</option>
+                    <option value="Letter">Letter</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Other">Other</option>
+                    <option value="Email">Email</option>
+                    <option value="Sales">Sales</option>
+                    <option value="800 Number">800 Number</option>
+                </select>
             </div>
             <br>
             <div class="dropdown">
                 <label for="type">Type</label><br>   
                 <select name="Type">
+                   <option value=""></option>
                     <option value="Compliment">Compliment</option>
                     <option value="Complaint">Complaint</option>
                     <option value="Inquiry">Inquiry</option>
@@ -137,6 +146,7 @@
             <div class="dropdown">
                 <label>Location</label><br>
                 <select name="Size">
+                    <option value=""></option>
                     <option value="">AMX</option>
                     <option value="">BAP</option>
                     <option value="">COP</option>
@@ -180,9 +190,10 @@
             <div class="dropdown">
                 <label>Reasons</label><br>
                 <select name="Size">
+                    <option value=""></option>
                     <option value="">Allergens</option>
-                    <option value="">Appearance : Dark Color</option>
-                    <option value="">Apearance : Shape</option>
+                    <option value="">Appearance: Dark Color</option>
+                    <option value="">Apearance: shape</option>
                     <option value="">Bad Seal</option>
                     <option value="">Breakage</option>
                     <option value="">Burnt Apperance</option>
@@ -192,9 +203,9 @@
                     <option value="">Damaged : Package</option>
                     <option value="">Dislike : General</option>
                     <option value="">Dislike : Taste</option>
-                    <option value="">Dislike Texture</option>
-                    <option value="">flavor : Other</option>
-                    <option value="">flavor : Sour</option>
+                    <option value="">Dislike : Texture</option>
+                    <option value="">Flavor : Other</option>
+                    <option value="">Flavor : Sour</option>
                     <option value="">Foreign Object : Hair</option>
                     <option value="">Foreign Object : Insect</option>
                     <option value="">Foreign Object : Masa Clump</option>
@@ -272,7 +283,7 @@
         <div id="map" style="width: 100%; height: 90%"></div>
     
         <div>
-            <input type="submit" id="submit">
+            <input type="submit" id="submit" value="Submit">
         </div>
     </form>
   
